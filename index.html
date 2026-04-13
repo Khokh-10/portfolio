@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Ahmed Emad Khokh — Backend Developer specializing in PHP and Laravel. Building scalable RESTful APIs and database-driven systems." />
+  <meta name="keywords" content="Backend Developer, PHP, Laravel, MySQL, REST API, Egypt" />
+  <meta property="og:title" content="Ahmed Emad Khokh — Backend Developer" />
+  <meta property="og:description"
+    content="Building scalable backend systems with PHP & Laravel. Open to Gulf opportunities." />
+  <title>Ahmed Emad Khokh — Backend Developer | PHP | Laravel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="dark">
+
+  <!-- ═══════════════════════════════ NAV ═══════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">AEK<span class="logo-dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-icon" id="themeIcon">☀</span>
+          <span id="themeLabel">Light</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE OVERLAY -->
+  <div class="mobile-overlay" id="mobileOverlay" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+    <nav class="mobile-nav">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#experience" class="mobile-link">Experience</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </nav>
+  </div>
+
+  <!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="container hero-inner">
+
+      <div class="hero-badge reveal">
+        <span class="badge-pulse" aria-hidden="true"></span>
+        Available for Opportunities
+      </div>
+
+      <h1 class="hero-name reveal r-delay-1">
+        <span class="name-line">Ahmed Emad</span>
+        <span class="name-line name-accent">Khokh</span>
+      </h1>
+
+      <p class="hero-role reveal r-delay-2">
+        Backend Developer &nbsp;·&nbsp; PHP &amp; Laravel Specialist
+      </p>
+
+      <p class="hero-tagline reveal r-delay-2">
+        Building scalable, secure backend systems and RESTful APIs with Laravel.<br />
+        Clean code · SOLID principles · Database-first thinking.
+      </p>
+
+      <div class="hero-ctas reveal r-delay-3">
+        <a href="#projects" class="btn btn-primary">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+            aria-hidden="true">
+            <polyline points="16 18 22 12 16 6" />
+            <polyline points="8 6 2 12 8 18" />
+          </svg>
+          View Projects
+        </a>
+        <a href="" download class="btn btn-secondary">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+            aria-hidden="true">
+            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          Download CV
+        </a>
+        <a href="mailto:ahmedkhokh48@gmail.com" class="btn btn-ghost">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+            aria-hidden="true">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          Get In Touch
+        </a>
+      </div>
+
+      <div class="hero-socials reveal r-delay-3">
+        <a href="https://github.com/Khokh-10" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+          </svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/ahmed-khokh/" target="_blank" rel="noopener" class="social-link"
+          aria-label="LinkedIn">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+          LinkedIn
+        </a>
+      </div>
+
+      <div class="hero-stats reveal r-delay-3">
+        <div class="stat-item">
+          <span class="stat-num">5+</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-num">1+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">Technologies</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-num">2</span>
+          <span class="stat-label">Companies</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ ABOUT ═══════════════════════════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-rule"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm <strong>Ahmed Emad Khokh</strong>, a Backend Developer from Damietta, Egypt, specialising in PHP and
+            Laravel. I build robust, database-driven applications and RESTful APIs with a focus on <strong>clean code,
+              security, and scalable architecture</strong>.
+          </p>
+          <p>
+            Currently completing my <strong>BSc in Information Technology</strong> at Damietta University (2021–2025),
+            I've simultaneously worked on real-world production systems at Humavolve — contributing to a Doctor
+            Appointment System and a Fitness Platform.
+          </p>
+          <p>
+            My engineering mindset is rooted in <strong>SOLID principles</strong> and MVC architecture. I believe that
+            software you're proud of is software that's readable, testable, and built to last — not just software that
+            ships.
+          </p>
+          <p>
+            I'm open to Backend Developer opportunities worldwide, where I can contribute to building scalable,
+            high-quality systems and collaborate with talented engineering teams.
+          </p>
+          <div class="about-meta">
+            <span class="meta-chip">📍 Damietta, Egypt</span>
+            <span class="meta-chip">🎓 BSc IT — 2025</span>
+            <span class="meta-chip">🌍 Open to Relocation</span>
+            <span class="meta-chip">🗣 Arabic (Native) · English (Intermediate)</span>
+          </div>
+        </div>
+
+        <div class="about-cards reveal r-delay-2">
+          <div class="about-card">
+            <div class="about-card-icon" aria-hidden="true">🧹</div>
+            <div>
+              <h3 class="about-card-title">Clean Code</h3>
+              <p class="about-card-desc">SOLID principles, proper naming, small focused functions — code that reads like
+                documentation.</p>
+            </div>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon" aria-hidden="true">⚙️</div>
+            <div>
+              <h3 class="about-card-title">Scalable Systems</h3>
+              <p class="about-card-desc">Architecture that grows gracefully — from MVP to enterprise without rewrites.
+              </p>
+            </div>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon" aria-hidden="true">🔒</div>
+            <div>
+              <h3 class="about-card-title">Security First</h3>
+              <p class="about-card-desc">JWT auth, role-based access control, and input validation built in from day
+                one.</p>
+            </div>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon" aria-hidden="true">🔍</div>
+            <div>
+              <h3 class="about-card-title">Problem Solver</h3>
+              <p class="about-card-desc">Breaking complex requirements into elegant, pragmatic backend solutions
+                efficiently.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ SKILLS ═══════════════════════════════ -->
+  <section id="skills" class="section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Technical Expertise</span>
+        <h2 class="section-title">Skills</h2>
+        <div class="section-rule"></div>
+      </div>
+
+      <div class="skills-layout">
+
+        <!-- Left: Bars -->
+        <div class="skills-bars reveal">
+          <h3 class="skills-group-title">Core Proficiency</h3>
+          <div class="skill-bar-item">
+            <div class="skill-bar-meta">
+              <span>PHP</span><span class="skill-pct">92%</span>
+            </div>
+            <div class="skill-bar-track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"
+              aria-label="PHP 92%">
+              <div class="skill-bar-fill" style="--w:92%"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-meta"><span>Laravel Framework</span><span class="skill-pct">90%</span></div>
+            <div class="skill-bar-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+              aria-label="Laravel 90%">
+              <div class="skill-bar-fill" style="--w:90%"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-meta"><span>RESTful API Design</span><span class="skill-pct">88%</span></div>
+            <div class="skill-bar-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"
+              aria-label="REST API 88%">
+              <div class="skill-bar-fill" style="--w:88%"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-meta"><span>MySQL &amp; Eloquent ORM</span><span class="skill-pct">87%</span></div>
+            <div class="skill-bar-track" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"
+              aria-label="MySQL 87%">
+              <div class="skill-bar-fill" style="--w:87%"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-meta"><span>JWT Authentication</span><span class="skill-pct">85%</span></div>
+            <div class="skill-bar-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
+              aria-label="JWT 85%">
+              <div class="skill-bar-fill" style="--w:85%"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-meta"><span>JavaScript / AJAX</span><span class="skill-pct">70%</span></div>
+            <div class="skill-bar-track" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+              aria-label="JavaScript 70%">
+              <div class="skill-bar-fill" style="--w:70%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Tag clouds -->
+        <div class="skills-tags-col reveal r-delay-2">
+
+          <div class="skills-tag-group">
+            <h3 class="skills-group-title">Frameworks &amp; Libraries</h3>
+            <div class="tag-cloud">
+              <span class="tag tag-accent">Laravel</span>
+              <span class="tag">Blade Templates</span>
+              <span class="tag">Eloquent ORM</span>
+              <span class="tag">Laravel Sanctum</span>
+            </div>
+          </div>
+
+          <div class="skills-tag-group">
+            <h3 class="skills-group-title">Dev Tools</h3>
+            <div class="tag-cloud">
+              <span class="tag">Git / GitHub</span>
+              <span class="tag">Postman</span>
+              <span class="tag">Composer</span>
+              <span class="tag">Artisan CLI</span>
+              <span class="tag">VS Code</span>
+            </div>
+          </div>
+
+          <div class="skills-tag-group">
+            <h3 class="skills-group-title">Architecture &amp; Concepts</h3>
+            <div class="tag-cloud">
+              <span class="tag tag-teal">OOP</span>
+              <span class="tag tag-teal">SOLID Principles</span>
+              <span class="tag tag-teal">MVC Architecture</span>
+              <span class="tag tag-teal">Design Patterns</span>
+              <span class="tag tag-teal">Role-Based Access</span>
+              <span class="tag tag-teal">DB Optimization</span>
+            </div>
+          </div>
+
+          <div class="skills-tag-group">
+            <h3 class="skills-group-title">Soft Skills</h3>
+            <div class="tag-cloud">
+              <span class="tag">Problem Solving</span>
+              <span class="tag">Team Collaboration</span>
+              <span class="tag">Communication</span>
+              <span class="tag">Continuous Learning</span>
+              <span class="tag">Adaptability</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ PROJECTS ═══════════════════════════════ -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">What I've Built</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-rule"></div>
+      </div>
+
+      <div class="filter-bar reveal" role="group" aria-label="Filter projects">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="laravel">Laravel</button>
+        <button class="filter-btn" data-filter="api">REST API</button>
+        <button class="filter-btn" data-filter="auth">Auth / RBAC</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- Project 1 -->
+
+
+        <!-- Project 2 -->
+        <article class="project-card reveal r-delay-1" data-tags="laravel api auth">
+          <div class="project-card-header">
+            <span class="project-num">02</span>
+          </div>
+          <h3 class="project-name">Doctor Appointment System</h3>
+          <p class="project-desc">A role-based medical appointment platform serving doctors and patients. Built patient
+            and doctor profile management modules, an in-app notification system, and secure role-based access control —
+            all delivered via a clean REST API documented with Postman.</p>
+          <div class="project-achievement">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+              aria-hidden="true">
+              <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+            </svg>
+            Notification system reduced missed actions by an estimated 25%
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Laravel</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">REST API</span>
+            <span class="tech-tag">Blade</span>
+            <span class="tech-tag">JWT</span>
+            <span class="tech-tag">Postman</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/Huma-volve/round10-phplaravel-doctorappintment-team-one"
+              class="proj-btn proj-btn-gh" target="_blank" rel="noopener">
+              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg>
+              GitHub
+            </a>
+            <a href="YOUR_LIVE_DEMO_LINK_HERE" class="proj-btn proj-btn-live" target="_blank" rel="noopener">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+              Live Demo
+            </a>
+
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal r-delay-2" data-tags="laravel api">
+          <div class="project-card-header">
+            <span class="project-num">03</span>
+          </div>
+          <h3 class="project-name">Fitness Platform</h3>
+          <p class="project-desc">Developed the home page and notification module for a production-ready fitness
+            platform at Humavolve. Worked across both backend APIs and Blade views, ensuring seamless full-stack
+            integration. Optimised database queries using Eloquent ORM to improve response performance.</p>
+          <div class="project-achievement">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+              aria-hidden="true">
+              <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+            </svg>
+            Production-deployed at Humavolve — real users, real impact
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Laravel</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">REST API</span>
+            <span class="tech-tag">Blade</span>
+            <span class="tech-tag">Eloquent ORM</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/Huma-volve/Fitness-php-laravel-group-one" class="proj-btn proj-btn-gh"
+              target="_blank" rel="noopener">
+              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg>
+              GitHub
+            </a>
+            <a href="YOUR_LIVE_DEMO_LINK_HERE" class="proj-btn proj-btn-live" target="_blank" rel="noopener">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+              Live Demo
+            </a>
+          </div>
+        </article>
+        <article class="project-card reveal" data-tags="laravel api auth">
+          <div class="project-card-header">
+            <span class="project-num">01</span>
+            <div class="project-badges">
+              <span class="proj-badge proj-badge-featured">Graduation Project</span>
+            </div>
+          </div>
+          <h3 class="project-name">QRoll — Smart QR Attendance System</h3>
+          <p class="project-desc">A QR-code-based attendance platform built as a graduation project. Supports multiple
+            user roles — students, doctors, engineers, and admins — each with tailored API endpoints. Includes Excel
+            bulk import for onboarding large cohorts and full Postman API documentation.</p>
+          <div class="project-achievement">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+              aria-hidden="true">
+              <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+            </svg>
+            JWT auth + role-based API architecture for 4 distinct user types
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Laravel</span>
+            <span class="tech-tag">JWT</span>
+            <span class="tech-tag">REST API</span>
+            <span class="tech-tag">Excel Import</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">Postman</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/Khokh-10/Qroll" class="proj-btn proj-btn-gh" target="_blank" rel="noopener">
+              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg>
+              GitHub
+            </a>
+            <a href="YOUR_LIVE_DEMO_LINK_HERE" class="proj-btn proj-btn-live" target="_blank" rel="noopener">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+              Live Demo
+            </a>
+          </div>
+
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card reveal" data-tags="laravel auth">
+          <div class="project-card-header">
+            <span class="project-num">04</span>
+          </div>
+          <h3 class="project-name">Clinic Management System</h3>
+          <p class="project-desc">A clinic management backend supporting appointment scheduling and patient record
+            management. Implemented business logic using MVC architecture and Eloquent ORM, with a focus on data
+            integrity and clean separation of concerns across controllers, models, and services.</p>
+          <div class="project-achievement">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+              aria-hidden="true">
+              <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+            </svg>
+            Clean MVC separation with Laravel Eloquent ORM throughout
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Laravel</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">Eloquent ORM</span>
+            <span class="tech-tag">MVC</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/Khokh-10/clinic" class="proj-btn proj-btn-gh" target="_blank" rel="noopener">
+              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card reveal r-delay-1" data-tags="api">
+          <div class="project-card-header">
+            <span class="project-num">05</span>
+          </div>
+          <h3 class="project-name">Book Shop System</h3>
+          <p class="project-desc">A dynamic e-commerce bookstore built with native PHP and MySQL — no framework.
+            Demonstrates core backend fundamentals: CRUD operations, user management, and structured query design
+            without relying on ORM abstractions. A showcase of raw PHP proficiency.</p>
+          <div class="project-achievement">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+              aria-hidden="true">
+              <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+            </svg>
+            Built with native PHP — demonstrates deep language fundamentals
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Native PHP</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">CRUD</span>
+            <span class="tech-tag">HTML / CSS</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/Khokh-10/book_store" class="proj-btn proj-btn-gh" target="_blank"
+              rel="noopener">
+              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ EXPERIENCE ═══════════════════════════════ -->
+  <section id="experience" class="section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Career Path</span>
+        <h2 class="section-title">Experience &amp; Education</h2>
+        <div class="section-rule"></div>
+      </div>
+
+      <div class="timeline">
+
+        <div class="tl-item reveal">
+          <div class="tl-marker tl-marker--active" aria-hidden="true"></div>
+          <div class="tl-content">
+            <div class="tl-top">
+              <div>
+                <div class="tl-date">Present</div>
+                <h3 class="tl-company">Humavolve</h3>
+                <div class="tl-role">Backend Developer — Team Projects</div>
+              </div>
+              <span class="tl-type">Full-time</span>
+            </div>
+            <ul class="tl-bullets">
+              <li>Collaborated with cross-functional teams on two production-ready Laravel applications</li>
+              <li>Developed in-app notification systems and profile management modules (API + Blade)</li>
+              <li>Contributed to Doctor Appointment System: patient &amp; doctor profiles, notifications</li>
+              <li>Built Fitness Platform components: home page and notification modules</li>
+              <li>Applied MVC architecture and SOLID principles throughout</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">REST API</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Blade</span>
+              <span class="tech-tag">SOLID</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal r-delay-1">
+          <div class="tl-marker" aria-hidden="true"></div>
+          <div class="tl-content">
+            <div class="tl-top">
+              <div>
+                <div class="tl-date">Jul 2024 — Dec 2024</div>
+                <h3 class="tl-company">EraaSoft</h3>
+                <div class="tl-role">Backend Development Trainee</div>
+              </div>
+              <span class="tl-type">Training</span>
+            </div>
+            <ul class="tl-bullets">
+              <li>Completed an intensive backend development diploma in PHP, Laravel, and MySQL</li>
+              <li>Built practical applications using Laravel and REST APIs</li>
+              <li>Implemented secure authentication, DB optimisation, and backend architecture best practices</li>
+              <li>Practiced OOP and SOLID principles in real-world projects</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">OOP</span>
+              <span class="tech-tag">MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal r-delay-2">
+          <div class="tl-marker" aria-hidden="true"></div>
+          <div class="tl-content">
+            <div class="tl-top">
+              <div>
+                <div class="tl-date">Jul 2024</div>
+                <h3 class="tl-company">Information Technology Institute (ITI)</h3>
+                <div class="tl-role">Full Stack Development Intern</div>
+              </div>
+              <span class="tl-type">Internship</span>
+            </div>
+            <ul class="tl-bullets">
+              <li>Gained hands-on full-stack experience using PHP, Laravel, and MySQL</li>
+              <li>Applied frontend and backend integration concepts collaboratively</li>
+              <li>Developed small applications and APIs as part of the training programme</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Full Stack</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal r-delay-3">
+          <div class="tl-marker tl-marker--edu" aria-hidden="true"></div>
+          <div class="tl-content">
+            <div class="tl-top">
+              <div>
+                <div class="tl-date">2021 — 2025</div>
+                <h3 class="tl-company">Damietta University</h3>
+                <div class="tl-role">BSc Information Technology — Faculty of Computers &amp; AI</div>
+              </div>
+              <span class="tl-type tl-type--edu">Education</span>
+            </div>
+            <ul class="tl-bullets">
+              <li>Studying Information Technology at the Faculty of Computers and Artificial Intelligence</li>
+              <li>Graduation project: QRoll — Smart QR Attendance System (Laravel, JWT, REST API)</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ CONTACT ═══════════════════════════════ -->
+  <!-- ═══════════════════════════════ CONTACT ═══════════════════════════════ -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Let's Connect</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-rule"></div>
+      </div>
+
+      <p class="contact-intro reveal">
+        Looking for a dedicated backend developer for your company? I'm available immediately and open to relocation.
+        Let's build something great together.
+      </p>
+
+      <div class="contact-cards-grid reveal r-delay-1">
+
+        <a href="mailto:ahmedkhokh48@gmail.com" class="contact-card">
+          <div class="contact-card-icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </div>
+          <div>
+            <div class="contact-card-label">Email</div>
+            <div class="contact-card-value">ahmedkhokh48@gmail.com</div>
+          </div>
+        </a>
+
+        <a href="tel:+201055200798" class="contact-card">
+          <div class="contact-card-icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.02 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+            </svg>
+          </div>
+          <div>
+            <div class="contact-card-label">Phone / WhatsApp</div>
+            <div class="contact-card-value">+20 105 520 0798</div>
+          </div>
+        </a>
+
+        <a href="https://linkedin.com/in/ahmedemad" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-card-icon">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </div>
+          <div>
+            <div class="contact-card-label">LinkedIn</div>
+            <div class="contact-card-value">https://www.linkedin.com/in/ahmed-khokh/</div>
+          </div>
+        </a>
+
+        <a href="https://github.com/ahmedemad" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-card-icon">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+            </svg>
+          </div>
+          <div>
+            <div class="contact-card-label">GitHub</div>
+            <div class="contact-card-value">https://github.com/Khokh-10</div>
+          </div>
+        </a>
+
+        <div class="contact-card contact-card--avail">
+          <div class="contact-card-icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+          </div>
+          <div>
+            <div class="contact-card-label">Location</div>
+            <div class="contact-card-value">Damietta, Egypt · Open for opportunities</div>
+          </div>
+        </div>
+
+        <div class="contact-card contact-card--avail">
+          <div class="contact-card-icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+          </div>
+          <div>
+            <div class="contact-card-label">Availability</div>
+            <div class="contact-card-value avail-green">Available Immediately</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="contact-cta reveal r-delay-2">
+        <a href="mailto:ahmedkhokh48@gmail.com" class="btn btn-primary">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          Email Me Directly
+        </a>
+        <a href="Ahmed_Emad_Khokh.pdf" download class="btn btn-secondary">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          Download CV
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="footer-logo">AEK<span class="logo-dot">.</span></span>
+        <p class="footer-copy">© 2025 Ahmed Emad Khokh. All rights reserved.<br />Built with care in Damietta, Egypt
+          🇪🇬</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- SCROLL TO TOP -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"
+      aria-hidden="true">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </button>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
